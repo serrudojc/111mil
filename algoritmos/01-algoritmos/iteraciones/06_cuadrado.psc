@@ -1,12 +1,22 @@
 Proceso cuadrado
-	definir a,b Como Entero;
+	definir h,a,i,k Como Entero;
 	definir salir como caracter;
-	
-	salir<-adentro;
-	
+	salir<-'adentro';
 	Repetir
-		Escribir 'Ingresar lados de rectangulo:';
-	Hasta Que salir=='salir'
+		Escribir 'Ingresar alto:';
+		Leer h;
+		Escribir 'Ingresar ancho:';
+		Leer a;
+		
+		Para i<-1 Hasta h Con Paso 1 Hacer
+			Para k<-1 Hasta a Con Paso 1 Hacer
+				escribir Sin Saltar '#';
+			FinPara
+			Escribir '';
+		FinPara
+		
+		
+	Hasta Que salir=='salir';
 	
 	
 	
