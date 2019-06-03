@@ -43,7 +43,7 @@ SubProceso disp <- disponibilidad ( mont, caj, cant )	//veo si hay dinero dispon
 		dinero <- cant[i];						//guardo en dinero que cantidad de billetes tengo del cajon[i]
 		Mientras mont >= caj[i] Hacer			//mientras el monto sea mayor a la denominacion del cajón[i]
 			Si dinero>0 Entonces				//mientras haya dinero en el cajón 
-				aSacarMin <- aSacarMax;
+				aSacarMin <- aSacarMin + caj[i];
 				aSacarMax <- aSacarMin + caj[i];
 				dinero <- dinero -1;
 				mont <- mont - caj[i];
@@ -97,11 +97,11 @@ SubProceso extraccion ( mont, caj, cant )
 			FinSi
 			
 		FinPara
-				
+		
 	FinMientras
 	
 	Escribir 'Extraccion: ',billete[0],' *',tipobill[0],'$ + ',billete[1],' *',tipobill[1],'$ + ',billete[2],' *',tipobill[2],'$';
-		
+	
 FinSubProceso
 
 //--------------------------------------------------------------------------
