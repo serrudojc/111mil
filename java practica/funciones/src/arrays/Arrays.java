@@ -1,4 +1,4 @@
-package ImplementacionesArrays;
+package arrays;
 
 public class Arrays {
 	public static int buscar (Object[] arr, int n, Object valor) {
@@ -16,5 +16,11 @@ public class Arrays {
 				return true;
 		}
 		return false;		
+	}
+	
+	public static void inicializar(Object[] arr, int n, Object valor) {
+		for(int i=0; i<n; i++) {
+			arr[i] = valor;
+		}
 	}
 }

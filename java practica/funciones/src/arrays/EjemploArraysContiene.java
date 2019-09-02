@@ -2,9 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-import ImplementacionesArrays.Arrays;
-
-public class Contiene {
+public class EjemploArraysContiene {
 	public static void contieneStrings() {
 		Scanner entrada = new Scanner(System.in);
 		String saludos[] = new String[3];

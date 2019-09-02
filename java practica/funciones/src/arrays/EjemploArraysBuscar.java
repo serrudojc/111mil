@@ -2,9 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-import ImplementacionesArrays.Arrays;
-
-public class Buscar {
+public class EjemploArraysBuscar {
 
 	public static void main(String[] args) {
 		String[] palabras = new String[5];
